@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.countdown').countdown({end: (new Date('11/30/2013').getTime() / 1000), now: (new Date().getTime() / 1000)});
+    $('.countdown').countdown({end: (new Date('2014-02-22').getTime() / 1000), now: (new Date().getTime() / 1000)});
 
     if ($.fn.cssOriginal!=undefined) {
         $.fn.css = $.fn.cssOriginal;

@@ -69,6 +69,13 @@ website:    http://www.themepunch.com
       letter-spacing: -1.5px;
     }
 
+@media screen and (min-width: 1000px) {
+  .caption.sfr.caption-main.tp-caption.start{
+    top: 150px !important;
+  }
+}
+
+
 .tp-caption.big_black{
       position: absolute;
       color: #000;
@@ -306,6 +313,8 @@ website:    http://www.themepunch.com
           }
 
 .button.big     { color:#fff; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6); font-weight:bold; padding:9px 20px; font-size:19px;  line-height:57px !important; background:url(../images/gradient/g40.png) repeat-x top;}
+
+
 
 
 .purchase:hover,
@@ -731,7 +740,7 @@ html {
     width:100% !important;
     position:relative;
     padding:0;
-    max-height:455px !important;
+    max-height:705px !important;
     overflow:hidden;
   }
 
@@ -10214,3 +10223,4 @@ a.badge:focus {
     margin-bottom: 0;
   }
 }
+
