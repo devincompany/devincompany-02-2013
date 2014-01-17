@@ -69,16 +69,22 @@ website:    http://www.themepunch.com
       letter-spacing: -1.5px;
     }
 
+
+
+.row.speaker .span7 .name{
+  line-height: 30px;
+}
+
+.organization .row.speaker{
+  border-bottom: 0;
+}
+
 @media screen and (min-width: 1000px) {
   .caption.sfr.caption-main.tp-caption.start{
     top: 150px !important;
   }
 }
 
-.organization .row.speaker{
-  border-bottom: 0;
-}
-  
 @media screen and (min-width: 500px) {
   .organization.speakers{
     text-align: center;  
@@ -104,12 +110,29 @@ website:    http://www.themepunch.com
   }
 }
 
+@media screen and (max-width: 767px) {
+  .responsive-txt-center{
+    text-align: center;
+  }
+  .speakers-wrapper h2{
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .organization.speakers{
     text-align: center;  
   }
-  .organization .row.speaker{
-    border-bottom: 0;
+  .responsive-txt-center{
+    text-align: center;
+  }
+  .row.speaker .span7 .time{
+    padding-top: 20px;
+  }
+  .speakers-wrapper h2{
+    padding-top: 25px;
+    padding-bottom: 35px;
   }
 }
 
