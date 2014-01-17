@@ -75,6 +75,10 @@ website:    http://www.themepunch.com
   }
 }
 
+.organization .row.speaker{
+  border-bottom: 0;
+}
+  
 @media screen and (min-width: 500px) {
   .organization.speakers{
     text-align: center;  
@@ -82,7 +86,6 @@ website:    http://www.themepunch.com
   .organization .row.speaker{
     display: inline-block;
     margin: 0 10px;
-    border-bottom: 0;
   }
   .organization .row.speaker .span2.image{
     float: none;
@@ -104,6 +107,9 @@ website:    http://www.themepunch.com
 @media screen and (max-width: 500px) {
   .organization.speakers{
     text-align: center;  
+  }
+  .organization .row.speaker{
+    border-bottom: 0;
   }
 }
 
