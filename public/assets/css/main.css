@@ -75,6 +75,37 @@ website:    http://www.themepunch.com
   }
 }
 
+@media screen and (min-width: 500px) {
+  .organization.speakers{
+    text-align: center;  
+  }
+  .organization .row.speaker{
+    display: inline-block;
+    margin: 0 10px;
+    border-bottom: 0;
+  }
+  .organization .row.speaker .span2.image{
+    float: none;
+    display: block;
+    margin-bottom: 0;
+    width: 120px;
+  }
+  .organization .row.speaker .span7{
+    width: auto;
+    float: none;
+    display: block;
+  }
+  .organization .row.speaker .span7 .name{
+    padding-bottom: 25px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .organization.speakers{
+    text-align: center;  
+  }
+}
 
 .tp-caption.big_black{
       position: absolute;
