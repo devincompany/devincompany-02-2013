@@ -1,0 +1,84 @@
+header{
+    background-color: #efefef;
+    .logo-header{
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: auto;
+        height: 50px;
+        cursor: pointer;
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+    nav{
+    }
+    ul{
+        text-align: center;
+        display: block;
+        padding: 15px 0;
+    }
+    li{
+        font-family: "Lato";
+        font-weight: 300;
+        display: inline-block;
+        margin: 0 12px;
+        a{
+            display: block;
+            text-decoration: none;
+            color: rgba(0,0,0,0.9);
+            padding: 10px 0;
+            border-bottom: 5px solid #efefef;
+            @include  transition(border-bottom 300ms linear);
+            &:hover{
+                border-bottom: 1px solid #ff7e5b;
+            }
+        }
+    }
+}
+
+#mosaico{
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+    .fotos{
+        position: relative;
+        z-index: 5;
+        background-image: url("../../res/images/cover.png");
+        background-size: 1800px 500px;
+        background-position: 0 0;
+        background-repeat: repeat-x;
+        width: 9000px;
+        height: 500px;
+        opacity: 0.8;
+
+        @include translate3d(0,0,0);
+        @include  transition(transform 300ms linear);
+
+        -webkit-animation: bgCover 1000s linear infinite;
+        -moz-animation: bgCover 1000s linear infinite;
+        -o-animation: bgCover 1000s linear infinite;
+        -ms-animation: bgCover 1000s linear infinite;
+        animation: bgCover 1000s linear infinite;
+
+    }
+    .infos{
+        top: 0;
+        z-index: 10;
+    }
+}
+
+
+
+@include keyframe("bgCover") {
+    0% {
+        @include translate3d(0,0,0);
+    }
+    50% {
+        @include translate3d(-9000px,0,0);
+    }
+    100% {
+        @include translate3d(0,0,0);
+    }
+}
