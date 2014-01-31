@@ -32,8 +32,8 @@
         width: 765px;
         padding: 10px;
         h1{
-            display: inline-block;
-            vertical-align: middle;
+            display: block;
+            margin-bottom: 10px;
             a{
                 font-family: "Lato";
                 font-weight: 500;
@@ -44,8 +44,7 @@
             }
         }
         .empresa{
-            display: inline-block;
-            vertical-align: middle;
+            display: block;
             a{
                 color: #898989;
                 font-family: "Arial",sans-serif;
@@ -79,5 +78,31 @@
             font-size: 15px;
             line-height: 20px;
         }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .speaker .speaker-infos{
+        width: 555px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .speaker figure{
+        margin: 0 auto 20px;
+        display: block;
+    }
+    .speaker .speaker-infos{
+        width: 500px;
+    }
+    .speaker .speaker-infos{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .speaker .speaker-infos{
+        width: auto;
+    }
+    #speakers .section-title{
+        font-size: 26px;
     }
 }

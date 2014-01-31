@@ -20,3 +20,9 @@ main{
         margin-bottom: 50px;
     }
 }
+
+@media screen and (max-width: 960px) {
+    main{
+        padding: 50px 35px;
+    }
+}

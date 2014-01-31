@@ -74,3 +74,31 @@
         }
     }
 }
+@media screen and (max-width: 640px) {
+    #programacao h1{
+        font-size: 30px;
+    }
+    #programacao .programacao-list{
+        width: 300px;
+    }
+    #programacao .programacao-list li{
+        left: 44px;
+    }
+    #programacao .programacao-list time, #programacao .programacao-list h6{
+        font-size: 17px;
+    }
+    #programacao .programacao-list h6{
+        width: 176px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #programacao .programacao-list li{
+        left: 21px;
+    }
+    #programacao .programacao-list time, #programacao .programacao-list h6{
+        font-size: 12px;
+    }
+    #programacao .programacao-list h6{
+        width: 130px;
+    }
+}

@@ -68,6 +68,10 @@ html {
   background-color: #292c33;
 }
 
+.page-wrapper {
+  overflow: hidden;
+}
+
 .wrapper {
   width: 960px;
 }
@@ -98,6 +102,26 @@ html {
   display: block;
 }
 
+@media screen and (max-width: 960px) {
+  .wrapper {
+    width: 740px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper {
+    width: auto;
+  }
+}
 header {
   overflow: hidden;
   background-color: #ddd;
@@ -259,6 +283,44 @@ header .infos {
     transform: translate3d(0, 0, 0);
   }
 }
+@media screen and (max-width: 960px) {
+  .countdown .time-bind {
+    width: 160px;
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .countdown .time-bind {
+    width: 110px;
+    font-size: 42px;
+  }
+
+  .countdown .time-bind .label {
+    font-size: 14px;
+  }
+
+  .chamada-devincompany {
+    margin: 26px auto;
+  }
+
+  .chamada-devincompany h2 {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 640px) {
+  header .fotos {
+    height: 430px;
+  }
+
+  .countdown {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .logo-header {
+    width: 280px;
+  }
+}
 main {
   background-color: #EFF0F2;
   text-align: center;
@@ -281,6 +343,11 @@ main p {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 960px) {
+  main {
+    padding: 50px 35px;
+  }
+}
 #speakers {
   padding-bottom: 20px;
 }
@@ -317,8 +384,8 @@ main p {
   padding: 10px;
 }
 .speaker .speaker-infos h1 {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
+  margin-bottom: 10px;
 }
 .speaker .speaker-infos h1 a {
   font-family: "Lato";
@@ -329,8 +396,7 @@ main p {
   line-height: 30px;
 }
 .speaker .speaker-infos .empresa {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
 }
 .speaker .speaker-infos .empresa a {
   color: #898989;
@@ -365,6 +431,34 @@ main p {
   line-height: 20px;
 }
 
+@media screen and (max-width: 960px) {
+  .speaker .speaker-infos {
+    width: 555px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .speaker figure {
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  .speaker .speaker-infos {
+    width: 500px;
+  }
+
+  .speaker .speaker-infos {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .speaker .speaker-infos {
+    width: auto;
+  }
+
+  #speakers .section-title {
+    font-size: 26px;
+  }
+}
 #programacao {
   background-color: #fff;
   text-align: center;
@@ -440,6 +534,40 @@ main p {
   color: #3a3a47;
 }
 
+@media screen and (max-width: 640px) {
+  #programacao h1 {
+    font-size: 30px;
+  }
+
+  #programacao .programacao-list {
+    width: 300px;
+  }
+
+  #programacao .programacao-list li {
+    left: 44px;
+  }
+
+  #programacao .programacao-list time, #programacao .programacao-list h6 {
+    font-size: 17px;
+  }
+
+  #programacao .programacao-list h6 {
+    width: 176px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #programacao .programacao-list li {
+    left: 21px;
+  }
+
+  #programacao .programacao-list time, #programacao .programacao-list h6 {
+    font-size: 12px;
+  }
+
+  #programacao .programacao-list h6 {
+    width: 130px;
+  }
+}
 #localizacao {
   background-color: #EFF0F2;
   text-align: center;
