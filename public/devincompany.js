@@ -11,10 +11,10 @@ app.get('/', function(req, res){
     });
 });
 
-app.get('/v2', function(req, res){
-    fs.readFile(__dirname + '/index-v2.html', 'utf8', function(err, text){
-        res.send(text);
-    });
-});
+// app.get('/v2', function(req, res){
+//     fs.readFile(__dirname + '/index-v2.html', 'utf8', function(err, text){
+//         res.send(text);
+//     });
+// });
 
-app.listen(3005);
+app.listen(3001);

@@ -19,7 +19,29 @@ module.exports = function( grunt ) {
         }
       }
     },
-
+    imagemin: {
+      dynamic: {
+        options: {
+          optimizationLevel: 3
+        },
+        files: [{
+          expand: true,
+          cwd: 'res/images/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'res/images/'
+        }]
+      }
+    },
+    imageoptim: {
+      dynamic: {
+        options: {
+          jpegMini: true,
+          imageAlpha: true,
+          quitAfter: true
+        },
+        src: ['res/images/']
+      }
+    },
     watch: {
       sass: {
         options: {
@@ -34,6 +56,8 @@ module.exports = function( grunt ) {
 
   // task registration
   grunt.registerTask('default', ['watch']);
+
+  grunt.registerTask('images', ['imagemin:dynamic', 'imageoptim:dynamic']);
 
 };
 
